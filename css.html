@@ -4,14 +4,30 @@
 <head id="header">
 <style>
 div.column {
+columns : 5 100px;
+column-fill : balance;
+column-gap: 1em;
+column-rule : thin solid red;
 -webkit-columns : 5 100px;
 -webkit-column-fill : balance;
 -webkit-column-gap: 1em;
 -webkit-column-rule : thin solid red;
+-moz-columns : 5 100px;
+-moz-column-fill : balance;
+-moz-column-gap: 1em;
+-moz-column-rule : thin solid red;
+-o-columns : 5 100px;
+-o-column-fill : balance;
+-o-column-gap: 1em;
+-o-column-rule : thin solid red;
+
 }
 div.column h5 {
 background-color : blue;
+column-span : all;
 -webkit-column-span : all;
+-moz-column-span : all;
+-o-column-span : all;
 }
 </style>
 <title>マルチカラムレイアウトサンプル</title>
@@ -44,3 +60,4 @@ background-color : blue;
 <ul>
 <li>column-span : カラムにまたがって表示させる</li>
 </ul>
+<a href="http://thinkit.co.jp/story/2012/04/12/3515?page=0,2">参照元：Think it</a>
